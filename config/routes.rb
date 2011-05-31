@@ -1,5 +1,6 @@
 Mafalda::Application.routes.draw do
   resources :topicos
+  resources :votos
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

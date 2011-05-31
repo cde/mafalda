@@ -11,13 +11,13 @@ Característica: Topicos y Detalles
     Y pulso "Create"
 
   Escenario: Visualizando un topico en detalle
-    Cuando visito la página topicos
+    Cuando visito topicos
     Y hago click en "Rails Fixtures"
     Entonces debo ver "Rails Fixtures"
     Y no deberia ver "New Topico"
 
   Escenario: Eliminando un topico
-    Cuando visito la página topicos
+    Cuando visito topicos
     Y hago click en "Delete"
     Entonces no debo ver "Rails Fixtures"
     Y deberia ver "New Topico"

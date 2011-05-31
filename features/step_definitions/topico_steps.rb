@@ -2,22 +2,6 @@
 begin require 'rspec/expectations'; rescue LoadError; require 'spec/expectations'; end
 require 'cucumber/formatter/unicode'
 
-Before do
-  @topico = Topico.create(:titulo =>"Rails Fixtures")
-end
-
-Cuando /^visito la página (.+)$/ do |page_name|
-  visit path_to(page_name)
-end
-
-Dado /^que navego a (.+)$/ do |page_name|
-  visit path_to(page_name)
-end
-
-Cuando /^oprimo el botón "([^"]*)"$/ do |button|
-  click_button(button)
-end
-
 
 Entonces /^debo ver el botón "([^"]*)"$/ do |button_name|
   find_button(button_name)
@@ -56,11 +40,3 @@ Entonces /^no debo ver \/([^\/]*)\/$/ do |regexp|
   end
 end
 
-Y /^debo estar en (.+)$/ do |page_name|
-  current_path = URI.parse(current_url).path
-  if current_path.respond_to? :should
-    current_path.should == path_to(page_name)
-  else
-    assert_equal path_to(page_name), current_path
-  end
-end

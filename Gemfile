@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.5'
+gem 'rake', '0.9.2'
+gem 'rails', '3.0.7'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -34,5 +35,8 @@ gem 'rspec-rails', '>= 2.3.0'
 gem 'capybara', '0.4.0'
 gem 'database_cleaner'
 gem 'cucumber-rails'
+gem 'factory_girl_rails'
+gem 'nifty-generators'
 gem 'launchy'
 end
+#gem "mocha", :group => :test

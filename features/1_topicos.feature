@@ -4,16 +4,16 @@ Característica: Topicos
   Los usuario deben crear y editar los mismos
 
   Escenario: Nuevo Topico
-    Cuando visito la página topicos
+    Cuando visito topicos
     Y hago click en "New Topico"
     Entonces debo ver el botón "Create"
 
   Escenario: Creando un topico
-    Cuando visito la página topicos
+    Cuando visito topicos
     Y hago click en "New Topico"
     Cuando completo el campo "Titulo" con "Rails Fixtures"
     Y completo el campo "Descripcion" con "Rails es genial"
-    Y oprimo el botón "Create"
+    Y oprimo "Create"
     Entonces debo ver "Rails Fixtures"
     Y debo estar en topicos
 

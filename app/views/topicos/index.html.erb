@@ -1,25 +1,27 @@
-<h1>Listing topicos</h1>
+<h1>Topicos</h1>
 
 <table>
   <tr>
-    <th>Titulo</th>
-    <th>Descripcion</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
-<% @topicos.each do |topico| %>
-  <tr>
-    <td><%= topico.titulo %></td>
-    <td><%= topico.descripcion %></td>
-    <td><%= link_to 'Show', topico %></td>
-    <td><%= link_to 'Edit', edit_topico_path(topico) %></td>
-    <td><%= link_to 'Destroy', topico, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+  <% @topicos.each do |topico| %>
+      <tr>
+        <td><%= link_to topico.titulo, topico %></td>
+        <td></td>
+        <td><%= pluralize(topico.votos.length, "voto") %></td>
+        <td><%= link_to '+1', votos_path(:topico_id => topico.id), :method => :post %></td>
+        <% if topico.votos.empty? %>
+            <td><%= link_to 'Edit', edit_topico_path(topico) %></td>
+            <td><%= link_to 'Delete', topico, :confirm => 'Are you sure?', :method => :delete %></td>
+        <% else %>
+        <% end %>
+      </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
 
 <%= link_to 'New Topico', new_topico_path %>

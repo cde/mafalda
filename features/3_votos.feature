@@ -11,10 +11,10 @@ Característica: Votos
     Y pulso "Create"
 
   Escenario: Viendo los votos
-    Cuando visito la página topicos
-    Entonces deberia ver  "0 votos"
+    Cuando visito topicos
+    Entonces deberia ver "0 votos"
 
   Escenario: Votando un topico
-    Cuando visito la página topicos
+    Cuando visito topicos
     Y hago click en "+1"
-    Entonces deberia ver "1 vote"
+    Entonces deberia ver "1 voto"
