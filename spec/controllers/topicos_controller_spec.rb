@@ -53,7 +53,7 @@ describe TopicosController do
       it "redirects to the created topico" do
         Topico.stub(:new) { mock_topico(:save => true) }
         post :create, :topico => {}
-        response.should redirect_to(topico_url(mock_topico))
+        response.should redirect_to(topicos_url)
       end
     end
 

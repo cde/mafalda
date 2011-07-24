@@ -1,5 +1,5 @@
 #language: es
-Característica: Votos
+Característica: Habilitar votos en topicos
   Para determinar que discurso dar
   Los usuarios deben votar por sus favoritos topicos.
 

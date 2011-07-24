@@ -15,5 +15,5 @@ Característica: Topicos
     Y completo el campo "Descripcion" con "Rails es genial"
     Y oprimo "Create"
     Entonces debo ver "Rails Fixtures"
-    Y debo estar en topicos
+    Y debo estar en inicio
 

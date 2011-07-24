@@ -7,11 +7,13 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-<header>
-  <%= image_tag('mafalda.jpg', :width => '150') %>
-</header>
-
-<%= yield %>
-
+	<div id="wrapper">
+		<header>
+			<%= image_tag('mafalda.jpg', :width => '150') %>
+		</header>
+		<div class="content">
+			<%= yield %>
+		</div>
+	</div>
 </body>
 </html>

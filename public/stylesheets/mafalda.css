@@ -1,0 +1,25 @@
+body {
+    background-color: #34486E;
+    font-family: Verdana;
+    font-size: 13px;
+    color: #333;
+}
+
+a {
+    color: #22D;
+}
+
+div#wrapper{
+	margin: 0px auto;
+	width:600px;
+    background-color: #fff;
+}
+
+div#wrapper > header{
+    display: block;
+}
+
+.content {
+    padding: 10px 95px;
+	background-color: #fff;
+}
