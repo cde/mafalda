@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+if Topico.all.empty?
+  Topico.create(:titulo => "What do you think about the World War 2", :descripcion => "Lorem Lorem Lorem Lorem")
+end
